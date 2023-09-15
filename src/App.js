@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React ,{ useState,useEffect } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App =()=>{
+  const [items,setItems]=useState([
+    {itemName:"item 1" ,quantity:1,isSelected:false},
+    {itemName:"item 2" ,quantity:2,isSelected:false},
+    {itemName:"item 3" ,quantity:3,isSelected:false},
+  ])
+  return(
+    <div className="app-bg">
+      
     </div>
-  );
+  )
 }
 
 export default App;
