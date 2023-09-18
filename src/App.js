@@ -1,7 +1,7 @@
 import React ,{ useState,useEffect } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faChevronLeft, faChevronRight, faCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 const App = () =>{
@@ -11,7 +11,9 @@ const App = () =>{
     {itemName:"item 3" ,quantity:3,isSelected:false},
   ])
 
+  
   const [inputValue,setInputValue] = useState('');
+  
   const [totalItemCount ,setTotalItemCount] = useState(6);
   
   const  toggleComplete=(index)=>{
@@ -64,9 +66,19 @@ const App = () =>{
                 )
                 }
               </div>
+              <div className="quantity">
+                <button>
+                  <FontAwesomeIcon icon={faChevronLeft}/>
+                </button>
+                <span>{item.quantity}</span>
+                <button>
+                  <FontAwesomeIcon icon={faChevronRight}/>
+                </button>
+              </div>
             </div>
          ))}
         </div>
+        <div className="total">Total: {totalItemCount}</div>
       </div>
     </div>
   )
