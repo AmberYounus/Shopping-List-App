@@ -64,8 +64,8 @@ const App = () =>{
         </div>
         <div className="item-list">
           {items.map((item,index)=>(
-            <div className="item-container">
-              <div className="item-name" onClick={()=>toggleComplete(index)}>
+            <div className="item-container" key={index}>
+              <div className="item-name"   onClick={()=>toggleComplete(index)}>
                 {item.isSelected ? (
                   <>
                   <FontAwesomeIcon icon={faCheckCircle}/>
