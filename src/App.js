@@ -8,11 +8,12 @@ const App = () =>{
     {itemName:"item 1" ,quantity:1,isSelected:false},
     {itemName:"item 2" ,quantity:2,isSelected:true},
     {itemName:"item 3" ,quantity:3,isSelected:false},
+    {itemName:"item 4" ,quantity:3,isSelected:true},
   ])
  
   const [inputValue,setInputValue] = useState('');
   
-  const [totalItemCount ,setTotalItemCount] = useState(6);
+  const [totalItemCount ,setTotalItemCount] = useState(4);
   
 
   const handleAddButtonClick = () => {
@@ -41,6 +42,7 @@ const App = () =>{
         setItems(newItems)
           totalCalculate()
     }
+
     const  toggleComplete = (index)=>{
       const newItems =[...items];
       newItems[index].isSelected = !newItems[index].isSelected;
@@ -55,12 +57,13 @@ const App = () =>{
       setTotalItemCount(totalItemCount);
   }
   return(
+    <>
     <div className="app-bg">
       <div className="main">
         <div className="add-item-box">
-          <input value={inputValue} className='add-item-input' placeholder='Add an item ...'
+          <input value={inputValue} className='add-item-input' placeholder='Add an item...'
           onChange={(e)=>setInputValue(e.target.value)} />
-          <FontAwesomeIcon icon={faPlus} onClick={()=>handleAddButtonClick()}/>
+          <FontAwesomeIcon icon={faPlus} className='faPlus' onClick={()=>handleAddButtonClick()}/>
         </div>
         <div className="item-list">
           {items.map((item,index)=>(
@@ -91,10 +94,10 @@ const App = () =>{
             </div>
          ))}
         </div>
-        <div className="total">Total: {totalItemCount}</div>
+        <div className="totalItems">Total Items : <b>{totalItemCount}</b> </div>
       </div>
     </div>
+ </>
   )
  }
-
 export default App;
