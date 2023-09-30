@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/shopping-list-app/static/css/main.a3ff1a37.css",
-    "main.js": "/shopping-list-app/static/js/main.79fec9e1.js",
-    "static/js/787.3aa3d9f8.chunk.js": "/shopping-list-app/static/js/787.3aa3d9f8.chunk.js",
-    "index.html": "/shopping-list-app/index.html",
-    "main.a3ff1a37.css.map": "/shopping-list-app/static/css/main.a3ff1a37.css.map",
-    "main.79fec9e1.js.map": "/shopping-list-app/static/js/main.79fec9e1.js.map",
-    "787.3aa3d9f8.chunk.js.map": "/shopping-list-app/static/js/787.3aa3d9f8.chunk.js.map"
+    "main.css": "/Shopping-List-App/static/css/main.a3ff1a37.css",
+    "main.js": "/Shopping-List-App/static/js/main.c3c579ee.js",
+    "static/js/787.3aa3d9f8.chunk.js": "/Shopping-List-App/static/js/787.3aa3d9f8.chunk.js",
+    "index.html": "/Shopping-List-App/index.html",
+    "main.a3ff1a37.css.map": "/Shopping-List-App/static/css/main.a3ff1a37.css.map",
+    "main.c3c579ee.js.map": "/Shopping-List-App/static/js/main.c3c579ee.js.map",
+    "787.3aa3d9f8.chunk.js.map": "/Shopping-List-App/static/js/787.3aa3d9f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3ff1a37.css",
-    "static/js/main.79fec9e1.js"
+    "static/js/main.c3c579ee.js"
   ]
 }
